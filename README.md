@@ -1,7 +1,5 @@
 # nextjs-redux-wrapper-toolkit-show-jayen
 
-# next12-reduxtoolkit-wrapper
-
 - ***This is from Kirill Konshin's GitHub [here](https://github.com/kirill-konshin/next-redux-wrapper) and for the Redux Toolkit, which is this example, it is specifically [here](https://github.com/kirill-konshin/next-redux-wrapper/tree/master/packages/demo-redux-toolkit)*** 
 - ***DOES NOT HAVE getStaticProps(), only has getServerSideProps!!!!***
 - ***This is an example of Next-Redux-Wrapper used with (Redux Toolki!)[https://github.com/kirill-konshin/next-redux-wrapper#redux-toolkit]!***
