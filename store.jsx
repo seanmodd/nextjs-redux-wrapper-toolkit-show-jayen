@@ -5,7 +5,7 @@ import {createWrapper, HYDRATE} from 'next-redux-wrapper';
 export const subjectSlice = createSlice({
     name: 'subject',
 
-    initialState: {} as any,
+    initialState: {},
 
     reducers: {
         setEnt(state, action) {
@@ -32,12 +32,12 @@ const makeStore = () =>
         devTools: true,
     });
 
-export type AppStore = ReturnType<typeof makeStore>;
-export type AppState = ReturnType<AppStore['getState']>;
-export type AppThunk<ReturnType = void> = ThunkAction<ReturnType, AppState, unknown, Action>;
+// export type AppStore = ReturnType<typeof makeStore>;
+// export type AppState = ReturnType<AppStore['getState']>;
+// export type AppThunk<ReturnType = void> = ThunkAction<ReturnType, AppState, unknown, Action>;
 
-export const fetchSubject = (id: any): AppThunk => async dispatch => {
-    const timeoutPromise = (timeout: number) => new Promise(resolve => setTimeout(resolve, timeout));
+export const fetchSubject = (id) => async dispatch => {
+    const timeoutPromise = (timeout) => new Promise(resolve => setTimeout(resolve, timeout));
 
     await timeoutPromise(200);
 
@@ -51,6 +51,6 @@ export const fetchSubject = (id: any): AppThunk => async dispatch => {
     );
 };
 
-export const wrapper = createWrapper<AppStore>(makeStore);
+export const wrapper = createWrapper(makeStore);
 
-export const selectSubject = (id: any) => (state: AppState) => state?.[subjectSlice.name]?.[id];
+export const selectSubject = (id) => (state) => state?.[subjectSlice.name]?.[id];

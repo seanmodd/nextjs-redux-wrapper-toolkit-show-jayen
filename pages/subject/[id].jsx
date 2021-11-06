@@ -15,7 +15,7 @@ const Page = props => {
 
     return (
         <div>
-                         <h3>{content.name}</h3>
+                  <h3>{content.name}</h3>
             <Link href="/subject/1">
                 <a>Subject id 1</a>
             </Link>
